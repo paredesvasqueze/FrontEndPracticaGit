@@ -3,10 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Con esta pagina estamos aprendiendo accesibilidad">
     <title>Document</title>
+    <style>
+        a:focus,button:focus
+        {
+            outline: 10px solid red;      
+            outline-offset: 10px;
+        }
+        body  
+        {
+            background-color: antiquewhite;
+            color: blue;
+        }
+
+    </style>
 </head>
-<body>
-    <h1>Edwin Paredes</h1>
-    <img src="Feria2026.jpg" alt="Imagen de Feria Institucional 2026">
+<body >
+    <header>
+        <h1>Mi Proyectos</h1>
+        <nav>   
+            <a href="#">Inicio</a>            
+            <a href="#">Nosotros</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Nuestros productos</h2>
+        <button>Comprar Aqui</button> 
+
+        <img src="feria.jpg" alt="Imagen de la Feria Institucional" >
+        <img src="images.jpg" alt="">
+
+        <form>
+            <label for="usuario"> </label>
+            <input type="text" placeholder="Ingrese usuario" name="usuario">
+
+            <label for="contrasena"> </label>
+            <input type="text" placeholder="Ingrese contraseña" name="contrasena">
+            <button>Ingresar</button>
+        </form>
+        <!--Los enlaces para navegar -->
+        <a href="nosotros.html">Ir a Nosotros</a>
+        <!--Los botones se suan para acciones -->
+        <button>Guardar</button>
+
+    </main>
+
+    <footer>    
+        <p>Instituto Trujillo</p>
+    </footer>
+
 </body>
 </html>
